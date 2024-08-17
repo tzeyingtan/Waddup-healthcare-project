@@ -1,0 +1,2 @@
+D1,DistributorCompany1,0123456789,1001,password,src/KeyStore/Distributor/PublicKey_D1,src/KeyStore/Distributor/PrivateKey_D1
+D2,DistributorCompany2,0123456789,1002,password,src/KeyStore/Distributor/PublicKey_D2,src/KeyStore/Distributor/PrivateKey_D2
