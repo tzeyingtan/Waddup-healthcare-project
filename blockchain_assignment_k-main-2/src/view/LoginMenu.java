@@ -80,7 +80,7 @@ public class LoginMenu extends javax.swing.JFrame {
         lblRapidCar3.setBackground(new java.awt.Color(0, 204, 204));
         lblRapidCar3.setFont(new java.awt.Font("Poppins Medium", 3, 36)); // NOI18N
         lblRapidCar3.setForeground(new java.awt.Color(0, 204, 204));
-        lblRapidCar3.setText("Medical Supply Chain Login");
+        lblRapidCar3.setText("DevMatch Medical Supply Chain - Login");
 
         jLabel42.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jLabel42.setText("ID:");
@@ -204,19 +204,19 @@ public class LoginMenu extends javax.swing.JFrame {
 
             // If the user exists and is found, open the corresponding frame
             switch (role) {
-                case "Manufacturer" -> {
+                case "Manufacturer" : {
                     ManufacturerFrame manufacturerf = new ManufacturerFrame(m);
                     manufacturerf.setVisible(true);
                 }
-                case "Distributor" -> {
+                case "Distributor" : {
                     DistributorFrame distributerf = new DistributorFrame(d, Blockchain_Assignment.inventoryController, Blockchain_Assignment.orderController, Blockchain_Assignment.transactionController);
                     distributerf.setVisible(true);
                 }
-                case "Healthcare_Provider" -> {
+                case "Healthcare_Provider" : {
                     HealthcareProviderFrame healthcareProviderf = new HealthcareProviderFrame(hp, Blockchain_Assignment.inventoryController, Blockchain_Assignment.orderController, Blockchain_Assignment.transactionController);
                     healthcareProviderf.setVisible(true);
                 }
-                default -> JOptionPane.showMessageDialog(this, "Invalid user ID. Please enter a valid ID.", "Error", JOptionPane.ERROR_MESSAGE);
+                default : JOptionPane.showMessageDialog(this, "Invalid user ID. Please enter a valid ID.", "Error", JOptionPane.ERROR_MESSAGE);
             }
 
             // Close the login GUI

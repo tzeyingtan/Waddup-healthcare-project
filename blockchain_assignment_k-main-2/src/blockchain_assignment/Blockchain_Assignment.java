@@ -45,7 +45,7 @@ public class Blockchain_Assignment {
     public static TransactionController transactionController;
 //    public static Key secretKey;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         File f = new File("src/RandomKey/secretkey");
 
